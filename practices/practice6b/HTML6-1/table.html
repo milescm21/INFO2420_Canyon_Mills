@@ -9,14 +9,64 @@
 <title>HTML Practice 6 - Tables</title>
 
 <style type="text/css">
-
-
+   div {
+      text-align: center;
+      margin: auto;
+   }
+   table {
+      margin: auto;
+      width: 550px;
+      border: 1px solid gray;
+      border-spacing: 4px;
+      padding: 5px;
+   }
+   caption {
+      color: #003300;
+      font-weight: bolder;
+      font-family: sans-serif;
+   }
+   td, th {
+      border: 1px solid gray;
+      padding: 3px;
+   }
+   .classes {
+      background-color: #cccccc;
+      width: 25%;
+   }
+   .days {
+      background-color: #99ff66;
+   }
 </style>
 </head>
 <body>
 <div >
    <table >
-	
+      <caption>My Class Schedule</caption>
+      <colgroup class="classes"></colgroup>
+      <tr>
+         <th>Courses</th>
+         <th class="days">Monday</th>
+         <th class="days">Tuesday</th>
+         <th class="days">Wednesday</th>
+         <th class="days">Thursday</th>
+         <th class="days">Friday</th>
+      </tr>
+      <tr>
+         <th>INFO 1120</th>
+         <td></td>
+         <td>9-11</td>
+         <td></td>
+         <td>9-11</td>
+         <td rowspan="2"></td>
+      </tr>
+      <tr>
+         <th>MATH 1010</th>
+         <td colspan="4">12-1</td>
+      </tr>
+      <tr>
+         <th>INFO 2420</th>
+         <td colspan="5">Online Available 24/7</td>
+      </tr>
    </table>
 </div>
 

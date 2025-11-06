@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Rent a Pet - Graphics</title>
+<title>Extreme Honeymoons - Graphics</title>
 
 <style type="text/css">
 
@@ -41,54 +41,52 @@
 	logo1 = new Image
 	logo2 = new Image
 if (document.images) {
-	PrintButton1.src = "images/print5.gif"
-	PrintButton2.src = "images/print6.gif"
-	logo1.src = "images/logo1.jpg"
-	logo2.src = "images/logo2.jpg"
+	PrintButton1.src = "../../image_and_rez/print1.png"
+	PrintButton2.src = "../../image_and_rez/print2.png"
+	logo1.src = "../../image_and_rez/logo1.new.png"
+	logo2.src = "../../image_and_rez/newlogo1.png"
 }
 
 
-		var imgArray = new Array(
-			'CoupleSailingLg.jpg',
-			'PigLg.jpg',
-			'SaladLg.jpg',
-			'StorkLg.jpg',
-			'HamsterLg.jpg'
-		);
+	var imgArray = new Array(
+		'CoupleBike3lg.jpg',
+		'CoupleHikingLg.jpg',
+		'CoupleEveningLg.jpg',
+		'CoupleSnowBoardLg.jpg'
+	);
 
 
-		var titleArray = new Array(
-			'Newlyweds Sailing',
-			'Boy and His Pig',
-			'Yummy Salad',
-			'Stork at Sunset',
-			'Cute Hamster'
-		);
+	var titleArray = new Array(
+		'Couple Biking',
+		'Couple Hiking',
+		'Cute Sunset',
+		'Couple Snowboarding'
+	);
 			
-		var imgPath = "Images/Fullsize/";
+	var imgPath = "../../image_and_rez/large/";
 		
-		function swapImage(imgID) {
+	function swapImage(imgID) {
 
-			var theImage = document.getElementById('theImage');
-			var textDiv = document.getElementById('bottomText');
+		var theImage = document.getElementById('theImage');
+		var textDiv = document.getElementById('bottomText');
 
-			var newImg;
-			var textTitle;
+		var newImg;
+		var textTitle;
 
-			newImg = imgArray[imgID];
-			theImage.src = imgPath + newImg;
+		newImg = imgArray[imgID];
+		theImage.src = imgPath + newImg;
 
-			textTitle=titleArray[imgID];
+		textTitle=titleArray[imgID];
 
-      			textDiv.innerHTML = textTitle;
-		}
+		textDiv.innerHTML = textTitle;
+	}
 			
-		function preloadImages() {		
-			for(var i = 0; i < imgArray.length; i++) {
-				var tmpImg = new Image;
-				tmpImg.src = imgPath + imgArray[i];
-			}
+	function preloadImages() {		
+		for(var i = 0; i < imgArray.length; i++) {
+			var tmpImg = new Image;
+			tmpImg.src = imgPath + imgArray[i];
 		}
+	}
 		
 
 </script>
@@ -103,7 +101,7 @@ if (document.images) {
 	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
 	onMouseOut="document.PrintButton.src=PrintButton1.src;">
 
-	<img src="../../image_and_rez/logo1.new.png" width="250" height="50" 
+	<img src="../../image_and_rez/print1.png" width="250" height="50" 
 	name="PrintButton" alt="PrintButton" style="border:none;"/>
 
 	</a>
@@ -111,10 +109,10 @@ if (document.images) {
 
 
 <div id="logo">
-	<a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+	<a href="" onMouseOver="document.logo.src=logo2.src;"
 	onMouseOut="document.logo.src=logo1.src;">
 
-	<img src="images/logo1.jpg" width="133" height="126" 
+	<img src="../../image_and_rez/logo1.new.png" width="133" height="126" 
 	name="logo" alt="logo" style="border:none;"/>
 
 	</a>
@@ -127,20 +125,19 @@ if (document.images) {
 
 
 <div id="thumbs">
-		<img src="Images/Thumbnails/Image1Sm.jpg" alt="Dog doing Trick" onmouseover="swapImage(0);" />
-		<img src="Images/Thumbnails/Image2Sm.jpg" alt="Two hunting Dogs" onmouseover="swapImage(1);" />
-		<img src="Images/Thumbnails/Image3Sm.jpg" alt="Dog and two kids" onmouseover="swapImage(2);" />
-		<img src="Images/Thumbnails/Image4Sm.jpg" alt="Woman and Dog" onmouseover="swapImage(3);" />
+		<img src="../../image_and_rez/CoupleBike3Sm.jpg" alt="Couple On Bikes" onmouseover="swapImage(0);" width="250" height="150"/>
+		<img src="../../image_and_rez/CoupleHikingSm.jpg" alt="Couple Hiking" onmouseover="swapImage(1);" width="250" height="150"/>
+		<img src="../../image_and_rez/CoupleEveningSm.jpg" alt="Couple With Sunset" onmouseover="swapImage(2);" width="250" height="150"/>
+		<img src="../../image_and_rez/CoupleSnowBoardSm.jpg" alt="Snowboarding Couple" onmouseover="swapImage(3);" width="250" height="150"/>
 		
 </div>
 
 	<div id="image">
-
-		<img id="theImage" src="Images/FullSize/Image1Lg.jpg" alt="Dog doing trick" />
-		<h3 id="bottomText">Newlyweds Sailing</h3>
+		<img id="theImage" src="../../image_and_rez/large/CoupleBike3Lg.jpg" alt="couple bike" />
+		<h3 id="bottomText">Couple on Bikes</h3>
 	</div>
 
-<img src="images/2colback.jpg">
+<img src="../../image_and_rez/background2.png">
 
 <br />
 <br />

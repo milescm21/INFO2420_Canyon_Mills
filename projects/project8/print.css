@@ -1,0 +1,13 @@
+<img src="mymap12.jpg" usemap="#myimagemap" width="702" height="494">
+
+<map name="myimagemap">
+  <area shape="rect" coords="13, 10, 310, 335" href="survey.html" alt="Survey Link">
+  
+  <area shape="rect" coords="540, 2, 700, 240" href="tributes.html" alt="Tributes Link">
+  
+  <area shape="rect" coords="300, 185, 595, 385" href="home.html" alt="Home Link">
+  
+  <area shape="rect" coords="15, 330, 420, 500" href="links.html" alt="Favorite Links Link">
+  
+  <area shape="rect" coords="510, 360, 700, 490" href="aboutus.html" alt="About Us Link">
+</map>

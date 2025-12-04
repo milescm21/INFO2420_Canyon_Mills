@@ -13,8 +13,7 @@ header{
     width: 900px;
     background-color: lightblue;
     border: dashed #937393;
-    padding: 10px;
-
+    padding: 20px;
     }
 h1{
     font-size: 275%;
@@ -75,4 +74,47 @@ h1{
 image{
     padding-left: 25px;
     padding-right: 25px;
+    }
+    nav{
+        width: 30%;
+        float: left;
+        height: 100%;
+    }
+    nav a{
+        border: 1px solid #937393;
+        background-color: #fff;
+    }
+    section{
+        width: 900px;
+        background-image: url('../../image_and_rez/background2.png');
+        background-repeat: repeat-y;
+    }
+    article{
+        width: 800px;
+    }
+	#thumbs, #image {
+		width: 700px;
+		text-align: center;
+        padding-left: 30%;
+		margin: 0 auto 0 auto;
+		color: #000;
+	}
+	#thumbs {
+		margin-top: 10px;
+        display: inline-block;
+	}		
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+	#image{
+		height:500px;
+	}
+    footer{
+        width: 900px;
+        background-color: #145a6a;
+        color: #fff;
+        height: 50px;
+        text-align: center;
+        font-style: italic;
     }
